@@ -51,7 +51,7 @@ jobs:
         with:
           auth: ${{ secrets.GIST_TOKEN }}
           gistID: 6a483243c9783b738a269f26ebcc0863
-          filename: try_badge_${BRANCH_NAME}.json
+          filename: try_badge_${{ env.BRANCH_NAME }}.json
           label: Test Result
           message: ${{ env.TEST_RESULT }}
           color: ${{ env.TEST_COLOR }}
