@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="13" failures="1" disabled="0" errors="0" time="0.561" timestamp="2021-04-21T12:21:23" name="AllTests">
+  <testsuite name="HistoryTest" tests="4" failures="0" disabled="0" errors="0" time="0.009" timestamp="2021-04-21T12:21:23">
+    <testcase name="isPosInRect" status="run" result="completed" time="0.001" timestamp="2021-04-21T12:21:23" classname="HistoryTest" />
+    <testcase name="getPosMeanValue" status="run" result="completed" time="0" timestamp="2021-04-21T12:21:23" classname="HistoryTest" />
+    <testcase name="posToHistory" status="run" result="completed" time="0" timestamp="2021-04-21T12:21:23" classname="HistoryTest" />
+    <testcase name="getSpeedMeanValue" status="run" result="completed" time="0.008" timestamp="2021-04-21T12:21:23" classname="HistoryTest" />
+  </testsuite>
+  <testsuite name="Config" tests="2" failures="1" disabled="0" errors="0" time="0.001" timestamp="2021-04-21T12:21:23">
+    <testcase name="basic" status="run" result="completed" time="0" timestamp="2021-04-21T12:21:23" classname="Config" />
+    <testcase name="nonexistFile" status="run" result="completed" time="0.001" timestamp="2021-04-21T12:21:23" classname="Config">
+      <failure message="../test/json_config_unittest.cpp:26&#x0A;Expected equality of these values:&#x0A;  v.value()&#x0A;    Which is: NULL&#x0A;  &quot;&quot;" type=""><![CDATA[../test/json_config_unittest.cpp:26
+Expected equality of these values:
+  v.value()
+    Which is: NULL
+  ""]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Lua" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2021-04-21T12:21:23">
+    <testcase name="basic" status="run" result="completed" time="0" timestamp="2021-04-21T12:21:23" classname="Lua" />
+  </testsuite>
+  <testsuite name="LuaVm" tests="2" failures="0" disabled="0" errors="0" time="0.011" timestamp="2021-04-21T12:21:23">
+    <testcase name="basic" status="run" result="completed" time="0" timestamp="2021-04-21T12:21:23" classname="LuaVm" />
+    <testcase name="getPath" status="run" result="completed" time="0.011" timestamp="2021-04-21T12:21:23" classname="LuaVm" />
+  </testsuite>
+  <testsuite name="Version" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2021-04-21T12:21:23">
+    <testcase name="basic" status="run" result="completed" time="0" timestamp="2021-04-21T12:21:23" classname="Version" />
+  </testsuite>
+  <testsuite name="WorldManager" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2021-04-21T12:21:23">
+    <testcase name="basic" status="run" result="completed" time="0" timestamp="2021-04-21T12:21:23" classname="WorldManager" />
+  </testsuite>
+  <testsuite name="XNode" tests="2" failures="0" disabled="0" errors="0" time="0.54" timestamp="2021-04-21T12:21:23">
+    <testcase name="basic" status="run" result="completed" time="0.54" timestamp="2021-04-21T12:21:23" classname="XNode" />
+    <testcase name="sort" status="run" result="completed" time="0" timestamp="2021-04-21T12:21:24" classname="XNode" />
+  </testsuite>
+</testsuites>
