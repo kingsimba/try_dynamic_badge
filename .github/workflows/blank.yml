@@ -46,7 +46,7 @@ jobs:
         uses: schneegans/dynamic-badges-action@v1.0.0
         if: always()
         with:
-          auth: ${{ env.GIST_TOKEN }}
+          auth: ${{ secrets.GIST_TOKEN }}
           gistID: 6a483243c9783b738a269f26ebcc0863
           filename: try_badge.json
           label: Test Result
