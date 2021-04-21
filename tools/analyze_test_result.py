@@ -15,9 +15,18 @@ def parseFile(filename: str):
     suites = doc.getElementsByTagName("testsuites")[0]
     testCount = suites.getAttribute("tests")
     failureCount = suites.getAttribute("failures")
-    testColor = "green" if failureCount == 0 else "red"
-    print(f"Test Result: {failureCount}/{testCount}")
-    writeFile("TEST_RESULT", f"TEST_RESULT={failureCount}/{testCount}\n")
+
+    testColor = ""
+    msg = ""
+    if int(failureCount) == 0:
+        testColor = "green"
+        msg = f"{testCount} passed"
+    else:
+        testColor = "red"
+        msg = f"{failureCount} of {testCount} failed"
+
+    print(f"Test Result: {msg} - {testColor}")
+    writeFile("TEST_RESULT", f"TEST_RESULT={msg}\n")
     writeFile("TEST_COLOR", f"TEST_COLOR={testColor}\n")
 
 
